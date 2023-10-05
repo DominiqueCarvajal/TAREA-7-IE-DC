@@ -2,7 +2,7 @@ let tuercas = [];
 let circulos = [];
 
 function setup() {
-  createCanvas(2000, 900);
+  createCanvas(windowWidth, windowHeight);
   background(255, 240, 200); // Cambiar el color de fondo a crema
   noFill();
   noStroke();
@@ -108,4 +108,8 @@ function randomColor() {
   // Función para obtener un color aleatorio de la lista de colores
   let colores = [color(0, 0, 255), color(139, 69, 19), color(128), color(0, 128, 0), color(255, 165, 0), color(255, 105, 180), color(128, 0, 128), color(255, 0, 0), color(255, 255, 0)];
   return random(colores);
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
