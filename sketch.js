@@ -2,7 +2,7 @@ let tuercas = [];
 let circulos = [];
 
 function setup() {
-  createCanvas(2000, 500);
+  createCanvas(2000, 900);
   background(255, 240, 200); // Cambiar el color de fondo a crema
   noFill();
   noStroke();
